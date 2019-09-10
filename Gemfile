@@ -1,2 +1,3 @@
 source "https://rubygems.org"
-gemspec
+gem 'jekyll', '~> 3.3'
+gem 'jekyll-theme-prologue', '~> 0.3.3'
