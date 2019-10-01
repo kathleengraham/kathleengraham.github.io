@@ -31,9 +31,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Kathleen Graham
-subtitle: Portfolio and Blog
+subtitle: Portfolio and Code Journal
 description: >- # this means to ignore newlines until "baseurl:"
-  Kathleen's portfolio and blog.
+  Kathleen's portfolio and code journal.
 author: Kathleen Graham
 email: kathleeng77@gmail.com
 avatar: assets/images/profile-pic.jpg

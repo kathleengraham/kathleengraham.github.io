@@ -7,6 +7,13 @@
   <meta name="robots" content="{{- page.robots | default: 'index, follow' -}}" />
   {%- unless page.canonical == false -%}<link rel="canonical" href="{{- page.url | absolute_url -}}" />{%- endunless -%}
   
+  <!-- Featured image when sharing on social media -->
+  {% if page.featured-image %}
+    <meta property="og:featured-image" content="/{{ page.featured-image }}" />
+  {% endif %}
+
+  <meta property="og:description" content="{{ page.subtitle }}" />
+
   <!-- Title, description, author -->
   {%- capture _page_title -%}
     {%- if page.title -%}{{- page.title | append: ' | ' -}}{%- endif -%}
