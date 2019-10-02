@@ -1,9 +1,78 @@
 ---
 title: 6 - Git Aliases
 layout: post
+excerpt_separator: <!--more-->
 ---
+<div align='center'><img width='60%' src='/assets/images/journal/gitconfig.jpg' alt='git-config-code'></div>
+<br>
+<br>
 <p>
-    Here is a <a href='https://codeburst.io/learn-how-to-create-custom-bash-commands-in-less-than-4-minutes-6d4ceadd9590' target_='blank' rel='noopener noreferrer'>tutorial</a> on how to set aliases for GitBash commands.
-    <br><br>
+    I read a <a href='https://codeburst.io/learn-how-to-create-custom-bash-commands-in-less-than-4-minutes-6d4ceadd9590' target_='blank' rel='noopener noreferrer'>tutorial</a> on how to set aliases for GitBash commands...
+    <!--more-->
+    <br>
+    <br>
     However, I found <a href='http://kurtdowswell.com/software-development/git-bash-aliases/' target_='blank' rel='noopener noreferrer'>this post</a> by Kurt Dowswell to be much more effective since it keeps the changes forever and I don't have to keep typing 'source ~/.custom_aliases' every time I open bash. I also like how extensive his list is and that I could add one for 'git push origin master' wherever I liked. I also liked how easy he made it to list out all the aliases in Git Bash if I ever forgot the ones that were set. So I have officially followed his step by step and am very pleased with my new git aliases! My personal favorite is 'g ac' so I can type my commit message after that without having any errors like with the .custom_aliases function with a placeholder. Yay for progress in improving my environment for better productivity!
+    <br>
+    <br>
+    Here is a screenshot of all the aliases from Kurt Dowswell with some of my own mixed in. I'm not sure why some of them are repeated, but that is research for another day!
+    <br>
+    <br>
+    <div align='center'><img width='100%' src='/assets/images/journal/gitconfig-full.jpg' alt='git-config-full-code'></div>
+    <br>
+    <br>
+    Here is the starter code for anyone reading this to try it out. But I encourage lots of research before officilly changing any config files or keep a copy somewhere in case you want to go back to the original config file!
+    <br>
+    <br>
+    <pre>
+    [filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+    [user]
+        name = enter your name here
+        email = enter your email here
+
+    [alias]
+    # logs
+    l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+    lg='git log --graph --oneline --decorate --all'
+
+    a = add
+    ap = add -p
+    aa = add .
+    ac = !git add -A && git commit -m
+    c = commit --verbose
+    ca = commit -a --verbose
+    cm = commit -m
+    cam = commit -a -m
+    m = commit --amend --verbose
+    pom = push origin master
+        
+    d = diff
+    ds = diff --stat
+    dc = diff --cached
+    a = add
+    ap = add -p
+    aa = add .
+    c = commit --verbose
+    ca = commit -a --verbose
+    cm = commit -m
+    cam = commit -a -m
+    m = commit --amend --verbose
+    pom = push origin master
+    
+    d = diff
+    ds = diff --stat
+    dc = diff --cached
+
+    s = status -s
+    co = checkout
+    cob = checkout -b
+    # list branches sorted by last modified
+    b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+    # list aliases
+    la = "!git config -l | grep alias | cut -c 7-"
+    </pre>
 </p>
