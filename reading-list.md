@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: Virtual Bookshelf
 layout: "page"
-icon: fa-book
+icon: fa-glasses
 order: 3
 ---
 
