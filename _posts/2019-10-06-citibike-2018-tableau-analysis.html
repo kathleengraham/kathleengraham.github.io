@@ -1,0 +1,42 @@
+---
+title: CitiBike on Tableau
+layout: post
+excerpt_separator: <!--more-->
+---
+<a href='https://public.tableau.com/views/CitiBike_2018_Analysis/CitiBike2018Analysis?:retry=yes&:display_count=y&:origin=viz_share_link' target='_blank'><div align='center'><img width='80%' src='/assets/images/journal/citibike-dashboard.png' alt='citibike-analysis-dashboard'></div></a>
+<p>
+    For my Tableau project, I created a dashboard with some visualizations and charts that show more information about the locations of the most popular starting and ending stations as well as how often and long rides are by known genders.
+</p>
+<!--more-->
+<p>
+    First, I had difficulty getting all the data into Tableau. Because I used Tableau Public, I could only import 15 million rows or less. I had to figure out how to reduce the numbers of rows in order to import the data. Ultimately, I removed all null values and genders that were 'unknown'. Although I didn't want to delete the unknown genders, there was no other way to include all 12 months of 2018. In the future, I would like full access to Tableau and import all the data, even for multiple years.
+</p>
+<p>
+    Next, I created the maps with plots for each station. After adding the built-in map feature showing points of interest, I was able to see that the most popular starting and ending station (Pershing Square North), is located next to Grand Central Terminal. 
+</p>
+<p>
+    Last, I was able to easily compare the duration of rides for known genders in addition to how often each known gender rides. It was interesting to see that females take longer trips even though they don't ride as often as males.
+</p>
+<p>
+    Check out the interactive dashboard below or click on the picture above to open it in your browser.
+</p>
+<div class='tableauPlaceholder' id='viz1575146905355' style='position: relative'>
+    <noscript>
+        <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;CitiBike_2018_Analysis&#47;CitiBike2018Analysis&#47;1_rss.png' style='border: none' /></a>
+    </noscript>
+    <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='CitiBike_2018_Analysis&#47;CitiBike2018Analysis' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;CitiBike_2018_Analysis&#47;CitiBike2018Analysis&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+    </object>
+</div>
+<script type='text/javascript'> var divElement = document.getElementById('viz1575146905355'); var vizElement = divElement.getElementsByTagName('object')[0]; if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1977px';} var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement); </script>
