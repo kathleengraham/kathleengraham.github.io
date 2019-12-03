@@ -7,3 +7,5 @@ title: Home
 icon: fa-home
 order: 1
 ---
+
+<link rel="shortcut icon" href="/assets/images/portfolio/favicon.ico" type="image/x-icon" />
