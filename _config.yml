@@ -30,10 +30,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Kathleen Graham
-subtitle: Portfolio and Code Journal
+title: Kathleen's Portfolio
+subtitle: #Portfolio and Code Journal
 description: >- # this means to ignore newlines until "baseurl:"
-  Kathleen's portfolio and code journal.
+  # Kathleen's portfolio and code journal.
 author: Kathleen Graham
 email: kathleeng77@gmail.com
 avatar: assets/images/profile-pic.jpg
